@@ -1,6 +1,7 @@
 import tensorflow as tf
 
 def BreLU(input):
+    # you can also define the func by using masks
     input=tf.nn.relu(input)
     input=tf.math.minimum(input,1)
     return input
